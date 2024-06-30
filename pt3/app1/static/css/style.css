@@ -1,0 +1,67 @@
+body {
+    margin-bottom:1px;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+}
+h1 {
+font-weight: bold;
+text-align: center;
+}
+
+h2{
+    color: red;
+    margin-bottom: 10px;
+    }
+
+    h3{
+        margin-top: 1px;
+        font-weight: normal;
+
+    }
+h4 {
+font-weight: bold;
+text-align: center;
+margin-top: 5px;
+color: rgb(65, 209, 65);
+}
+
+h5{
+margin-bottom: 0.1px;
+margin-top: 5px;
+font-weight: bold;
+color: rgb(38, 114, 38);
+font-size: 30px;
+}
+
+h7{
+    font-size: 25px;
+    font-weight: bold;
+color: rgb(107, 23, 23);  
+}
+
+.Welcome{
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    font-style: italic;
+}
+video{
+    width: 70% ;
+    height: 50%;
+}
+div {
+    margin-bottom: 5px;
+margin-right: 10px;
+}
+
+
+.RegisterButton {
+    background-color: #3b9ffc;
+    border-style: solid;
+    box-shadow: 3px 7px 5px white;
+    width: 100px;
+    color: aliceblue;
+    height: 30px;
+    
+    }

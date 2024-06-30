@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weclome to Turkey Tours Site</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1> Are you interested in visiting Turkey?</h1>
+    <h4>Fill out your form to contact us and receive a special offer for your favourite city !</h4>
+    <h2>Trabzon :</h2>
+    <h3> Lively Black Sea port city with a historic core, plus the prime base for trips to Sumela Monastery</h3>
+    <form name="TrabzonForm" method="post" action="/process" onsubmit="return validateForm(name)">
+        <div>
+            {% csrf_token %}
+            <input type="hidden" name="Turkey_Tours" value="Trabzon">
+            <div>
+                <label>First Name :<span>*</span> </label>
+                <input type="text" name="first_name">
+            </div>
+            <div>
+                <label>Last Name :<span>*</span> </label>
+                <input type="text" name="last_name">
+            </div>
+            <div>
+                <label>Email:<span>*</span> </label>
+                <input type="text" name="Email">
+            </div>
+            <div>
+                <label>Password:<span>*</span> </label>
+                <input type="password" name="password">
+            </div>
+            <div>
+                <label>check human:(4cVbQx9)<span>*</span> </label>
+                <input type="text" name="check_human">
+                <input type="submit" class="RegisterButton" value="Register">
+            </div>
+            </div>
+            
+            <h2>Istanbul :</h2>
+            <h3> One of the world's great metropolises, mixing grand Byzantine and Ottoman heritage with vivacious</h3>
+    </form>
+    <form name="IstanbulForm" method="post" action="/process" onsubmit="return validateForm(name)">
+        <div>
+            {% csrf_token %}
+            <input type="hidden" name="Turkey_Tours" value="Istanbul">
+            <div>
+                <label>First Name :<span>*</span> </label>
+                <input type="text" name="first_name">
+            </div>
+            <div>
+                <label>Last Name :<span>*</span> </label>
+                <input type="text" name="last_name">
+            </div>
+            <div>
+                <label>Email :<span>*</span> </label>
+                <input type="text" name="Email">
+            </div>
+            <div>
+                <label>Password:<span>*</span> </label>
+                <input type="password" name="password">
+            </div>
+            <div>
+                <label>check human:(24w2ZAq)<span>*</span> </label>
+                <input type="text" name="check_human">
+                <input type="submit" class="RegisterButton" value="Register">
+            </div>
+        </div>
+    </form>
+    <script src="{% static 'js/myscripts.js' %}"></script>
+</body>
+</html>

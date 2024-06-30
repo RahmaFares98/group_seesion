@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabzon</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">    
+
+</head>
+
+<body>
+    <h5>Submitted Sucessfully !</h5>
+    <p> Welcome <span class="Welcome">{{ request.session.first_name}} <span> </span>{{ request.session.last_name}}</span>, Cant wait to see you in
+    Trabzon :</p>
+    <video controls autoplay src="{% static 'img/Trabzon.mp4' %}" onmouseover="playVideo(this)"
+        onmouseleave="stopVideo(this)">  
+        <script src="{% static 'js/myscripts.js' %}"></script>
+</body>
+</html>
